@@ -28,4 +28,3 @@ print("호출후:", wordlist)
 #리스트가 아닌경우
 import copy
 device ={"아이폰 : " 5, "아이패드 : " 10}
-device2 = 
