@@ -38,7 +38,7 @@ def connectURI(server,port):
 print(connectURI("ycampus", "80"))
 print(connectURI(port="80", server="ycampus"))
 
-def union(*ar):
+def union(*ar)
     #지역변수
     result=[]
     for item in ar:
