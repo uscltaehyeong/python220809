@@ -1,6 +1,9 @@
 #DemoFunction2.py
 #이름을 해석하는 규칙(local, Global, Built-in : LGB 규칙)
 #전역변수
+from unittest import result
+
+
 x=5
 #함수정의
 def func1(a):
@@ -34,3 +37,18 @@ def connectURI(server,port):
 #호출
 print(connectURI("ycampus", "80"))
 print(connectURI(port="80", server="ycampus"))
+
+def union(*ar):
+    #지역변수
+    result=[]
+    for item in ar:
+        for x in item :
+            if x not in result :
+                result.append(x)
+    return result
+
+#호출
+print(union("HAM", "EGG"))
+print(union("HAM", "EGG", "SPAM"))
+
+
